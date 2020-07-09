@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_ctoast_background"
+    android:layout_width="wrap_content" android:layout_height="40dp">
+
+    <LinearLayout
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ctoast_img"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:src="@drawable/icon_white_danger"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/ctoast_title"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

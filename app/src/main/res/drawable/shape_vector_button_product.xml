@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="100dp"
+    android:height="27dp"
+    android:viewportWidth="100.707"
+    android:viewportHeight="27">
+
+    <group
+        android:translateX="0"
+        android:translateY="0">
+        <group
+            android:translateX="-0.706">
+            <path
+                android:fillColor="#F7931E"
+                android:pathData="M100.707,27H0V10H72.362a15.143,15.143,0,0,1,28.345-0.4V27Z"/>
+
+                <!--<aapt:attr name="android:fillColor">-->
+                    <!--<gradient-->
+                        <!--android:endX="10"-->
+                        <!--android:endY="10"-->
+                        <!--android:startX="0"-->
+                        <!--android:startY="70"-->
+                        <!--android:type="linear" >-->
+                        <!--<item-->
+                            <!--android:color="@color/Orange_orginal"-->
+                            <!--android:offset="0.0" />-->
+                        <!--<item-->
+                            <!--android:color="@color/Nice_Orange"-->
+                            <!--android:offset="1.0" />-->
+                    <!--</gradient>-->
+                <!--</aapt:attr>-->
+
+
+        </group>
+        <group
+            android:translateY="5"
+            android:translateX="77"
+            >
+            <path
+                android:fillColor="#fff"
+                android:pathData="M8.5,0A8.5,8.5,0,1,1,0,8.5,8.5,8.5,0,0,1,8.5,0Z" />
+        </group>
+        <group android:translateX="71.5"
+            android:translateY="-0.5">
+            <path
+                android:fillColor="#F1890F"
+                android:pathData="M18.25,14.714H14.714V18.25H13.536V14.714H10V13.536h3.536V10h1.179v3.536H18.25Z" />
+        </group>
+
+    </group>
+</vector>

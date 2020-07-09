@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--app:cardElevation="4dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layoutDirection="rtl"
+        android:padding="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:fitsSystemWindows="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_leftbar"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/toolbar_search"
+                    android:src="@drawable/icon_gray_search"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:alpha="0.65"
+                    android:background="@drawable/shape_imagebutton_gray"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <ImageButton
+                    android:id="@+id/toolbar_filter"
+                    android:src="@drawable/icon_gray_filter"
+                    android:padding="3dp"
+                    android:background="@drawable/shape_imagebutton_gray"
+                    android:visibility="invisible"
+                    android:scaleType="fitXY"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <ImageButton
+                    android:id="@+id/toolbar_dotmenu"
+                    android:src="@drawable/icon_gray_3dotmenu"
+                    android:padding="3dp"
+                    android:background="@drawable/shape_imagebutton_gray"
+                    android:visibility="invisible"
+                    android:scaleType="fitXY"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+               android:id="@+id/toolbar_rightbar"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageButton
+                   android:id="@+id/toolbar_menu"
+                   android:src="@drawable/icon_gray_menu"
+                   android:padding="3dp"
+                   android:scaleType="fitXY"
+                   android:background="@drawable/shape_imagebutton_gray"
+                   android:alpha="0.65"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp" />
+
+                <ImageButton
+                    android:id="@+id/toolbar_back"
+                    android:src="@drawable/icon_gray_back"
+                    android:background="@drawable/shape_imagebutton_gray"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    android:alpha="0.75"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/toolbar_middlebar"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/toolbar_leftbar"
+                android:layout_toLeftOf="@+id/toolbar_rightbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:text="@string/toolbar_title_1"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_searchbox"
+                    android:padding="3dp"
+                    android:visibility="visible"
+                    android:background="@drawable/shape_toolbar_searchbox"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageButton
+                        android:id="@+id/toolbar_delete"
+                        android:src="@drawable/icon_gray_delete"
+                        android:padding="6dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/shape_imagebutton_gray"
+                        android:alpha="0.65"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:id="@+id/toolbar_search_icon"
+                        android:layout_alignParentRight="true"
+                        android:padding="3dp"
+                        android:alpha="0.35"
+                        android:src="@drawable/icon_gray_search"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <EditText
+                        android:id="@+id/toolbar_search_edittext"
+                        android:textSize="9dp"
+                        android:textColor="@color/Black"
+                        android:hint="@string/toolbar_searchbox_hint"
+                        android:background="@null"
+                        android:textColorHint="@color/toolbar_searchbox_hint"
+                        android:layout_toLeftOf="@+id/toolbar_search_icon"
+                        android:layout_toRightOf="@+id/toolbar_delete"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <!--</android.support.v7.widget.CardView>-->
+</RelativeLayout>

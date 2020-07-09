@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/btnbasket3"
+    android:layoutDirection="ltr"
+    android:background="@drawable/shape_button_product_new"
+    android:clickable="true"
+    android:elevation="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <TextView
+        android:textColor="@color/White"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="@string/label70"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

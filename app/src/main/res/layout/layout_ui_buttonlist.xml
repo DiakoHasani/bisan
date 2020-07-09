@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnbasket"
+    android:layout_width="120dp"
+    android:padding="1dp"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/btnbasket1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button_orange_withoutraduis"
+        android:clipToPadding="true"></ImageView>
+
+    <TextView
+        android:textColor="@color/White"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/label46"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/btnbasket2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/circle_orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/shape_button_selector"
+            android:layerType="software" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_white_add" />
+    </RelativeLayout>
+</RelativeLayout>

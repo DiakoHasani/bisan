@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".UI.ModalActivities.Modal_basket">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:background="@android:color/transparent"
+        android:theme="@style/DialogActivity"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/Gray"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/label56"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/Gray"
+                android:alpha="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/label57"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/modal_basket_name"
+                    android:textSize="12dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray"
+                    android:hint="@string/label57"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/label59"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/modal_basket_address"
+                        android:textSize="12dp"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Gray"
+                        android:hint="@string/label59"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/label78"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/modal_basket_btnMap"
+                        android:textSize="12dp"
+                        android:background="@drawable/shape_button_cornerraduis_orange"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"
+                        android:text="@string/label60"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:text="__ , __"
+                        android:textSize="9dp"
+                        android:id="@+id/modal_basket_lat"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:maxLength="27"
+                        android:textColor="@color/Gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/label58"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/modal_basket_phone"
+                    android:textSize="12dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray"
+                    android:hint="@string/label58"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layoutDirection="rtl"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/modal_basket_btnAccept"
+                    android:textColor="@color/White"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_button_cornerraduis_orange"
+                    android:text="@string/label63"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+                <Button
+                    android:id="@+id/modal_basket_btnDelete"
+                    android:textColor="@color/White"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_button_cornerraduis_orange"
+                    android:text="@string/label64"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/modal_basket_btnprev"
+                android:textColor="@color/White"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/shape_button_selector_gray"
+                android:text="@string/label73"
+                android:layout_weight="0.5"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+
+
+        <include
+            layout="@layout/layout_ui_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_ui_connectionfail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardElevation="1.5dp"
+        app:cardCornerRadius="3dp"
+        android:padding="3dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:id="@+id/loading_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading"
+        android:src="@drawable/gif_loading"
+        android:scaleType="centerInside"
+        android:layout_width="50dp"
+        android:layout_height="40dp" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

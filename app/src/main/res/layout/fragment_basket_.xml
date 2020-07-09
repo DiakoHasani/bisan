@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackground"
+    tools:context=".UI.Fragments.Basket_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/ActivityBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/basket_fragment_label1"
+                        android:textSize="14dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:text="@string/label4"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/basket_fragment_label2"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/Black"
+                        android:text="@string/label5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/basket_fragment_basketPrice"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/basket_fragment_label2"
+                        android:layout_toLeftOf="@+id/basket_fragment_label1"
+                        android:textColor="@color/Red_orginal"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/Gray"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:alpha="0.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></View>
+
+                <RelativeLayout
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/basket_fragment_label3"
+                        android:textSize="14dp"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:text="@string/label6"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/basket_fragment_label4"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/Black"
+                        android:text="@string/label5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/basket_fragment_walletPrice"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/basket_fragment_label4"
+                        android:layout_toLeftOf="@+id/basket_fragment_label3"
+                        android:textColor="@color/Black"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/basket_fragment_label5"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/Black"
+                        android:text="@string/label7"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/basket_fragment_btnMap"
+                        android:textSize="12dp"
+                        android:background="@drawable/shape_button_cornerraduis_orange"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"
+                        android:text="@string/label8"
+                        android:textStyle="bold"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp" />
+
+                    <EditText
+                        android:id="@+id/basket_fragment_offEditText"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/basket_fragment_btnMap"
+                        android:layout_toLeftOf="@+id/basket_fragment_label5"
+                        android:textColor="@color/Black"
+                        android:text=""
+                        android:hint="@string/label9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/Gray"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:alpha="0.1"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/basket_fragment_btnComplete"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/White"
+                        android:text="@string/label10"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/shape_button_cornerraduis_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+
+                    <Button
+                        android:id="@+id/basket_fragment_btnClear"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/White"
+                        android:text="@string/label11"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_button_cornerraduis_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:background="@drawable/shape_recycler_background"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/basket_fragment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <include
+                layout="@layout/layout_ui_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+        <include layout="@layout/layout_ui_loading" android:layout_marginBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <include layout="@layout/layout_ui_connectionfail" android:layout_height="match_parent" android:layout_width="match_parent"/>
+    </RelativeLayout>
+</FrameLayout>

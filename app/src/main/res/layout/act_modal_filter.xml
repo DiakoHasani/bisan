@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".UI.ModalActivities.Modal_filter">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/Gray"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/label22"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/Gray"
+                android:alpha="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/modal_filter_check1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:textColor="@color/Gray"
+                        android:text="@string/label23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/modal_filter_check2"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:textColor="@color/Gray"
+                        android:text="@string/label24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/modal_filter_check3"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:textColor="@color/Gray"
+                        android:text="@string/label25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/Gray"
+                android:alpha="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <RelativeLayout
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/modal_filter_label1"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label77"
+                    android:textColor="@color/Gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/modal_filter_label2"
+                    android:textSize="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="@color/Gray"
+                    android:text="@string/label5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/Gray"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/modal_filter_txtprice"
+                    android:layout_toLeftOf="@+id/modal_filter_label1"
+                    android:layout_toRightOf="@+id/modal_filter_label2"
+                    android:text="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/modal_filter_seek"
+                android:layoutDirection="rtl"
+                android:max="300000"
+                android:min="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:background="@color/Gray"
+                android:alpha="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:textSize="12dp"
+                android:paddingTop="5dp"
+                android:text="@string/label26"
+                android:textStyle="bold"
+                android:textColor="@color/Gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/modal_filter_radioName"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:text="@string/label27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/modal_filter_radioPrice"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:text="@string/label28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/modal_filter_radioCategory"
+                    android:textSize="12dp"
+                    android:textColor="@color/Gray"
+                    android:text="@string/label29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layoutDirection="rtl"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/modal_filter_btnAccept"
+                    android:textColor="@color/White"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_button_cornerraduis_orange"
+                    android:text="@string/label30"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+                <Button
+                    android:id="@+id/modal_filter_btnDelete"
+                    android:textColor="@color/White"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_button_cornerraduis_orange"
+                    android:text="@string/label31"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

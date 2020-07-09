@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackground"
+    tools:context=".UI.Fragments.Home_Fragment">
+
+    <RelativeLayout
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/home_fragment_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_home"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/White"
+                        app:cardElevation="5dp">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp">
+
+                                <!--<com.glide.slider.library.SliderLayout-->
+                                    <!--android:id="@+id/slider"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="200dp"-->
+                                    <!--/>-->
+
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/home_shimmer"
+                                    android:elevation="1dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible">
+
+                                    <LinearLayout android:layout_width="match_parent"
+                                        android:background="@color/Gray_Loght"
+                                        android:layout_height="match_parent"></LinearLayout>
+
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/view_pager_commercial"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible" />
+
+                                <com.rd.PageIndicatorView
+                                    android:id="@+id/pageIndicatorView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="10dp"
+                                    android:visibility="visible"
+                                    app:piv_animationType="scale"
+                                    app:piv_dynamicCount="true"
+                                    app:piv_interactiveAnimation="true"
+                                    app:piv_selectedColor="@color/Red_orginal"
+                                    app:piv_unselectedColor="@color/Black"
+                                    app:piv_viewPager="@+id/view_pager_commercial"
+                                    attrs:piv_padding="4dp"
+                                    attrs:piv_radius="4dp" />
+
+                                <!--<ss.com.bannerslider.Slider-->
+                                    <!--android:id="@+id/slider"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--app:slider_interval="4000" />-->
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/home_fragment_categoryList"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layoutDirection="rtl"
+                                    android:layout_centerHorizontal="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/background_label_home"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label1"
+                            android:textColor="@color/White"
+                            android:textStyle="bold"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_items_home">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/home_fragment_mostSellList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:minHeight="140dp"/>
+
+                </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/background_label_home"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label2"
+                            android:textColor="@color/White"
+                            android:textStyle="bold"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_items_home">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:minHeight="140dp"
+                                android:id="@+id/home_fragment_referList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="rtl">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp">
+
+                                <!--<com.glide.slider.library.SliderLayout-->
+                                <!--android:id="@+id/slider"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="200dp"-->
+                                <!--/>-->
+
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/home_shimmer2"
+                                    android:elevation="1dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible">
+
+                                    <LinearLayout android:layout_width="match_parent"
+                                        android:background="@color/Gray_Loght"
+                                        android:layout_height="match_parent"></LinearLayout>
+
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/view_pager_commercial2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible" />
+
+                                <com.rd.PageIndicatorView
+                                    android:id="@+id/pageIndicatorView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="10dp"
+                                    android:visibility="visible"
+                                    app:piv_animationType="scale"
+                                    app:piv_dynamicCount="true"
+                                    app:piv_interactiveAnimation="true"
+                                    app:piv_selectedColor="@color/Red_orginal"
+                                    app:piv_unselectedColor="@color/Black"
+                                    app:piv_viewPager="@+id/view_pager_commercial"
+                                    attrs:piv_padding="4dp"
+                                    attrs:piv_radius="4dp" />
+
+                                <!--<ss.com.bannerslider.Slider-->
+                                <!--android:id="@+id/slider"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--app:slider_interval="4000" />-->
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            layout="@layout/layout_ui_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <include
+            layout="@layout/layout_ui_connectionfail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</FrameLayout>

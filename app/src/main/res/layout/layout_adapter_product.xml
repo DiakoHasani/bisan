@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:id="@+id/product_item_cardview"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_item">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/product_item_shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:background="@color/Gray_Loght"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="9"
+                        android:maxLines="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Gray_Loght"
+                        android:maxLength="13"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:background="@color/Gray_Loght"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <LinearLayout
+                android:id="@+id/product_item_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/product_item_image"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@color/Gray_Loght"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/product_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="16dp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/product_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Gray_Loght"
+                    android:maxLength="13"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp" />
+
+                <include
+                    layout="@layout/layout_button_product_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/product_item_btnLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:alpha="1"
+                android:background="@drawable/shape_imagebutton_gray"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_gray_heart">
+
+                <requestFocus />
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/product_item_btnDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:alpha="0.4"
+                android:background="@drawable/shape_imagebutton_gray"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_gray_delete"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

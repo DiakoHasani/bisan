@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.Wallet_Act">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@drawable/shadow_main_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/layout_ui_toolbar"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/ActivityBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
+            android:id="@+id/card_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="11dp"
+            app:cardCornerRadius="7dp"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/White"
+            card_view:cardElevation="6dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="11dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label79"
+                    android:gravity="center"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/wallet_image"
+                    android:layout_width="100dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_red_userprofile"
+                    app:civ_border_color="@color/Gray"
+
+                    app:civ_border_width="1dp"
+                    />
+
+                <TextView
+                    android:id="@+id/edt_price_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wallet_image"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:hint="@string/label75"
+                    android:singleLine="true"
+                    android:textColor="@color/Normal_Orange"
+                    android:textColorHint="@color/Gray"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wallet_image"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/label80"
+                    android:singleLine="true"
+                    android:textColor="@color/common_google_signin_btn_text_light_focused"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <include
+            layout="@layout/layout_ui_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+        <include layout="@layout/layout_ui_connectionfail" android:layout_height="match_parent" android:layout_width="match_parent"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

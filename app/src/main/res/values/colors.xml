@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/White</color>
+    <color name="colorPrimaryDark">@color/White</color>
+    <color name="colorAccent">@color/Orange_orginal</color>
+
+    <color name="Red_orginal">#B52626</color>
+    <color name="Orange_orginal">#F7931E</color>
+    <color name="Nice_Orange">#db7500</color>
+    <color name="Dark_Orange">#B36000</color>
+    <color name="Normal_Orange">#F1890F</color>
+    <color name="Gray">#707070</color>
+    <color name="GrayShadow">#489B9B9B</color>
+    <color name="Gray_Loght">#F5F5F5</color>
+    <color name="Brown">#BF6015</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="cardview_border">#12707070</color>
+    <color name="toolbar_searchbox">#E5E0E0</color>
+    <color name="toolbar_searchbox_stroke">#0D707070</color>
+    <color name="toolbar_searchbox_stroke2">#E5e0e0</color>
+    <color name="category_bg">#F3F3F3</color>
+    <color name="category_item">#E2E2E2</color>
+    <color name="toolbar_searchbox_hint">#70707070</color>
+    <color name="bottomMenu_orange">#FCD770</color>
+    <color name="ActivityBackground">#ececec</color>
+    <color name="ActivityBackground2">#7FB3D5</color>
+    <color name="Background_Text">#BA4A00</color>
+
+
+</resources>
