@@ -40,6 +40,7 @@ import com.example.bisan.Tools.DBExcute;
 import com.example.bisan.UI.Dialogs.CustomDialog;
 import com.example.bisan.UI.UIHandlers.LoadingHandler;
 import com.example.bisan.Tools.database;
+import com.flurry.android.FlurryAgent;
 
 import org.json.JSONObject;
 
@@ -67,6 +68,10 @@ public class Splash_Act extends AppCompatActivity implements ApplicationClass.AP
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.act_splash);
+
+        new FlurryAgent.Builder()
+                .withLogEnabled(true)
+                .build(this, "YD9SDW3P6WS8M8VSHVQC");
 
         Initials_Objects();
 

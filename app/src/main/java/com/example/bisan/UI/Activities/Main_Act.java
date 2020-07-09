@@ -74,10 +74,6 @@ public class Main_Act extends AppCompatActivity  {
         setContentView(R.layout.act_main);
         fragmentManager = getSupportFragmentManager();
 
-        new FlurryAgent.Builder()
-                .withLogEnabled(true)
-                .build(this, "YD9SDW3P6WS8M8VSHVQC");
-
         Initials_Objects();
 
         UI_Initial();
